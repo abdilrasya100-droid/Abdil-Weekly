@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-center {
+    text-align: center;
+    margin: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: teal;
+    color: white;
+    border: none;
+}
