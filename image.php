@@ -17,10 +17,10 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="biodata.html">Biodata</a></li>
-            <li><a href="image.html">Foto</a></li>
-            <li><a href="Mahasiswa.html">Mahasiswa</a></li>
+            <li><a href="indexphp">Home</a></li>
+            <li><a href="biodataphp">Biodata</a></li>
+            <li><a href="imagephp">Foto</a></li>
+            <li><a href="Mahasiswaphp">Mahasiswa</a></li>
         </ul>
     </nav>
 

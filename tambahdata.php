@@ -12,7 +12,7 @@
     <h1 class="title">Tambah Data Mahasiswa</h1>
 
     <div class="container">
-        <form action="Mahasiswa.html" method="post">
+        <form action="Mahasiswa.php" method="post">
             <table>
                 <tr>
                     <td>Nama</td>

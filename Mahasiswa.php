@@ -13,15 +13,15 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="biodata.html">Biodata</a></li>
-            <li><a href="image.html">Foto</a></li>
-            <li><a href="Mahasiswa.html">Mahasiswa</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="biodata.php">Biodata</a></li>
+            <li><a href="image.php">Foto</a></li>
+            <li><a href="Mahasiswa.php">Mahasiswa</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <a href="tambahdata.html">
+        <a href="tambahdata.php">
             <button>Tambah Data</button>
         </a>
 
@@ -36,13 +36,15 @@
                 <th>Tugas</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td align="center">1</td>
                 <td>M. Zainudin</td>
                 <td>123465543412</td>
+                <td align="center">Teknologi Informasi</td>
+                <td align="center">zainul@gmail.com</td>
+                <td abbr="center">089912344512</td>
                 <td><img src="0b8e4b658c67da335a7331673795bf95.jpg" width="80"></td>
-                <td>80</td>
-                <td>85</td>
-                <td>90</td>
+                <a href="editdata.php"><button>edit</button></a>
+                <a href="deletedata.php"><button>hapus</button></a>
             </tr>
         </table>
     </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB - TI UNIMUS 2026</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,10 +17,10 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="biodata.html">Biodata</a></li>
-            <li><a href="image.html">Foto</a></li>
-            <li><a href="Mahasiswa.html">Mahasiswa</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="biodata.php">Biodata</a></li>
+            <li><a href="image.php">Foto</a></li>
+            <li><a href="Mahasiswa.php">Mahasiswa</a></li>
         </ul>
     </nav>
 
