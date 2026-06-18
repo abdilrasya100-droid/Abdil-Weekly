@@ -69,6 +69,8 @@ $result = mysqli_query($koneksi, $query);
                 <td align="center"><?php echo $mhs['email']; ?></td>
                 <td align="center"><?php echo $mhs['no_hp']; ?></td>
                 <td><?php echo $mhs['foto']; ?></td>
+                
+                <td>
                 <a href="editdata.php"><button>edit</button></a>
                 <a href="deletedata.php"><button>hapus</button></a>
                 </td>            
