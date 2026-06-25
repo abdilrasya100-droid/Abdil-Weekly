@@ -1,23 +1,16 @@
 <?php
 
-// API
-$koneksi = mysqli_connect("localhost", "root", "", "abdweekly");
-
+require 'fungsi.php';
 
 $query = "SELECT * FROM mahasiswa";
 
-mysqli_Query($koneksi, $query);
-
-$result = mysqli_query($koneksi, $query);
+$mahasiswas = tampildata($query);
 
 
 
 
 
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,11 +51,12 @@ $result = mysqli_query($koneksi, $query);
             </tr>
             
             <?php
-            while($mhs = mysqli_fetch_assoc($result))
+                $no = 1;
+            foreach($mahasiswas as $mhs)
                 {
             ?>
             <tr>
-                <td align="center"><?php echo $mhs['id']; ?></td>
+                <td align="center"><?php echo $no; ?></td>
                 <td><?php echo $mhs['nama']; ?></td>
                 <td><?php echo $mhs['nim']; ?></td>
                 <td align="center"><?php echo $mhs['jurusan']; ?></td>    
@@ -71,11 +65,12 @@ $result = mysqli_query($koneksi, $query);
                 <td><?php echo $mhs['foto']; ?></td>
                 
                 <td>
-                <a href="editdata.php"><button>edit</button></a>
-                <a href="deletedata.php"><button>hapus</button></a>
+                <a href="editdata.php?id=<?php echo $mhs['id']; ?>"><button>edit</button></a>
+                <a href="deletedata.php?id=<?php echo $mhs['id']; ?>"><button>hapus</button></a>
                 </td>            
             </tr>
             <?php
+                $no++;
                 }
             ?>
         </table>
