@@ -66,7 +66,8 @@ $mahasiswas = tampildata($query);
                 
                 <td>
                 <a href="editdata.php?id=<?php echo $mhs['id']; ?>"><button>edit</button></a>
-                <a href="deletedata.php?id=<?php echo $mhs['id']; ?>"><button>hapus</button></a>
+
+                <a href="deletedata.php?id=<?php echo $mhs['id'] ?>" onclick="return confirm('yang bener???')"><button>hapus</button></a>
                 </td>            
             </tr>
             <?php

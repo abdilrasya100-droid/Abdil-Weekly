@@ -6,20 +6,8 @@
     
     if(isset($_POST['kirim'])) 
     {
-    
-          $nama = $_POST['nama'];
-          $nim = $_POST['nim'];
-          $jurusan = $_POST['jurusan'];
-          $email = $_POST['email'];
-          $no_hp = $_POST['no_hp'];
-          $foto = $_POST['foto'];
 
-          $query = "INSERT INTO mahasiswa (nama, nim, jurusan, email, no_hp, foto)
-          VALUES ('$nama','$nim','$jurusan','$email','$no_hp','$foto')";
-
-          mysqli_query($koneksi, $query);
-
-          if (mysqli_affected_rows($koneksi)) 
+          if (tambahdata($_POST) > 0) 
           {
               echo "<script>
                       alert('Data Berhasil Ditambahkan');
@@ -82,7 +70,7 @@
                 <tr>
                     <td><label for="foto">foto</label></td>
                     <td>:</td>
-                    <td><input type="text" name="foto" id="foto" required></td>
+                    <td><input type="file" name="foto" id="foto" required></td>
                 </tr>
                     <td colspan="2">
                         <button type="submit" name="kirim">Tambah Data</button>
